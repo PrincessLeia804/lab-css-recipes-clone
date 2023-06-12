@@ -22,3 +22,51 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+section {
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 75px;
+}
+
+ol, ul, p {
+  padding: 10px 75px 35px 75px;
+}
+
+
+hr {
+  width: calc(100% - 75px);
+  margin: auto;
+}
+
+h2 {
+  margin: 25px 50px 10px 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+  min-width: 200px;
+  max-width: 30%;
+}
+
+/* done */
+.pageTitle {
+  background-image: url("/apple-pie/images/apple-pie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.pageTitle h1 {
+  position: relative;
+  color: white;
+  padding-top: 225px;
+  font-weight: 300;
+  font-size: 4em;
+  text-align: center;
+}
