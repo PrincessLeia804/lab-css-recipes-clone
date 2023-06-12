@@ -35,6 +35,17 @@ ol, ul, p {
   padding: 10px 75px 35px 75px;
 }
 
+ol {
+  counter-reset: list;
+}
+ol > li {
+  list-style: none;
+}
+ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}
+
 
 hr {
   width: calc(100% - 75px);
@@ -50,22 +61,22 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 25px;
-  min-width: 200px;
-  max-width: 30%;
+  min-width: 250px;
+  max-width: 25%;
 }
 
-/* done */
 .pageTitle {
   background-image: url("/apple-pie/images/apple-pie.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  background-position-y: -10px;
+  height: 600px;
 }
 
 .pageTitle h1 {
   position: relative;
   color: white;
-  padding-top: 225px;
+  padding-top: 250px;
   font-weight: 300;
   font-size: 4em;
   text-align: center;
